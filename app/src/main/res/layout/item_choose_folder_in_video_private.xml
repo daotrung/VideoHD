@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/balloon_selected_folder_add_private"
+    android:layout_margin="@dimen/_10sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_edit_folder_video_private"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:src="@drawable/ic_baseline_folder_24"/>
+    <TextView
+        android:id="@+id/nameFolderPrivateVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_normal"
+        android:text="Delete"
+        android:textColor="#353945"
+        android:textSize="@dimen/_15sdp"/>
+
+</LinearLayout>

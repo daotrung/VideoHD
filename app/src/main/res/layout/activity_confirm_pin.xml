@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bck"
+    tools:context=".activity.SetPinActivity">
+
+    <ImageButton
+        android:id="@+id/closeConfirmPin"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:backgroundTint="@color/bck"
+        android:src="@drawable/ic_close" />
+
+    <TextView
+        android:id="@+id/txtDisplayConfirmPasscode"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_centerHorizontal="true"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:text="Confirm passcode"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_25sdp"
+        android:textStyle="bold"
+        android:layout_marginTop="?attr/actionBarSize"/>
+
+    <LinearLayout
+        android:id="@+id/pinConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDisplayConfirmPasscode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/pin_dot_1_conf"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/bg_view_gray_oval" />
+
+        <View
+            android:id="@+id/pin_dot_2_conf"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/bg_view_gray_oval" />
+
+        <View
+            android:id="@+id/pin_dot_3_conf"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/bg_view_gray_oval" />
+
+        <View
+            android:id="@+id/pin_dot_4_conf"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@drawable/bg_view_gray_oval" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/LineOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pinConfirm"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnConfNumberOne"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/_10sdp"
+            android:backgroundTint="@color/bck"
+            android:text="1"
+            android:textSize="@dimen/_30sdp" />
+
+        <Button
+            android:id="@+id/btnConfNumberTwo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:backgroundTint="@color/bck"
+            android:text="2"
+            android:textSize="@dimen/_30sdp" />
+
+        <Button
+            android:id="@+id/btnConfSetNumberThree"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/_10sdp"
+            android:backgroundTint="@color/bck"
+            android:text="3"
+            android:textSize="@dimen/_30sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LineOne"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnConfSetNumberFour"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/bck"
+            android:text="4"
+            android:layout_margin="@dimen/_10sdp"
+            android:textSize="@dimen/_30sdp"/>
+        <Button
+            android:id="@+id/btnConfSetNumberFive"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/bck"
+            android:text="5"
+            android:layout_margin="@dimen/_10sdp"
+            android:textSize="@dimen/_30sdp"/>
+        <Button
+            android:id="@+id/btnConfSetNumberSix"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/bck"
+            android:text="6"
+            android:layout_margin="@dimen/_10sdp"
+            android:textSize="@dimen/_30sdp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Line3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/Line2"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnConfSetNumberSeven"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/bck"
+            android:text="7"
+            android:layout_margin="@dimen/_10sdp"
+            android:textSize="@dimen/_30sdp"/>
+        <Button
+            android:id="@+id/btnConfSetNumberEight"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/bck"
+            android:text="8"
+            android:layout_margin="@dimen/_10sdp"
+            android:textSize="@dimen/_30sdp"/>
+        <Button
+            android:id="@+id/btnConfSetNumberNine"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/bck"
+            android:text="9"
+            android:textSize="@dimen/_30sdp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Line4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Line3"
+        android:layout_alignStart="@id/Line3"
+        android:layout_alignEnd="@id/Line3"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageButton
+            android:id="@+id/btnConfBack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/bck"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <Button
+            android:id="@+id/btnConfNumberZero"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/bck"
+            android:text="0"
+            android:textSize="@dimen/_30sdp" />
+
+        <ImageButton
+            android:id="@+id/btnOkConf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/bck"
+            android:saveEnabled="false"
+            android:src="@drawable/ic_un_check_pin" />
+
+    </LinearLayout>
+
+</RelativeLayout>

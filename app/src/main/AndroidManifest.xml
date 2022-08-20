@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.daotrung.myapplication">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".abs.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".activity.SelectedActivityVideoOrMusic"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ListVideoMusicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SecurityQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.EditSongActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.EditVideoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.EnterPinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ConfirmPinActivity"
+            android:exported="false"
+            android:theme="@style/FULLSCREENPASS" />
+        <activity
+            android:name=".activity.SetPinActivity"
+            android:exported="false"
+            android:theme="@style/FULLSCREENPASS" />
+        <activity
+            android:name=".activity.EqualizerMusicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.CustomSplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.PermissionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PlayVideoActivity"
+            android:configChanges="uiMode|orientation|screenSize|screenLayout|smallestScreenSize|keyboardHidden"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:theme="@style/playerVideoActivity" />
+        <activity
+            android:name=".activity.SearchVideoActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+        <activity
+            android:name=".activity.FolderVideoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SongsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SongPlayingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PrivateVideoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name=".service.MusicService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.daotrung.myapplication.action.INIT" />
+                <action android:name="com.daotrung.myapplication.action.INIT_PATH" />
+                <action android:name="com.daotrung.myapplication.action.INIT_QUEUE" />
+                <action android:name="com.daotrung.myapplication.action.FINISH" />
+                <action android:name="com.daotrung.myapplication.action.FINISH_IF_NOT_PLAYING" />
+                <action android:name="com.daotrung.myapplication.action.PREVIOUS" />
+                <action android:name="com.daotrung.myapplication.action.PAUSE" />
+                <action android:name="com.daotrung.myapplication.action.PLAYPAUSE" />
+                <action android:name="com.daotrung.myapplication.action.NEXT" />
+                <action android:name="com.daotrung.myapplication.action.EDIT" />
+                <action android:name="com.daotrung.myapplication.action.PLAY_TRACK" />
+                <action android:name="com.daotrung.myapplication.action.REFRESH_LIST" />
+                <action android:name="com.daotrung.myapplication.action.UPDATE_NEXT_TRACK" />
+                <action android:name="com.daotrung.myapplication.action.SET_PROGRESS" />
+                <action android:name="com.daotrung.myapplication.action.SKIP_BACKWARD" />
+                <action android:name="com.daotrung.myapplication.action.SKIP_FORWARD" />
+                <action android:name="com.daotrung.myapplication.action.SET_PLAYBACK_SPEED" />
+                <action android:name="com.daotrung.myapplication.action.BROADCAST_STATUS" />
+                <action android:name="com.daotrung.myapplication.action.UPDATE_QUEUE_SIZE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".service.RemoteControlReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".service.BroadReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_HEADSET_PLUG" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".service.ControlActionsListener"
+            android:exported="false" />
+        <receiver
+            android:name=".service.NotificationDismissedReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.simplemobiletools.musicplayer.action.NOTIFICATION_DISMISSED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

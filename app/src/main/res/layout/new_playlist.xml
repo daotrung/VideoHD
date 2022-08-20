@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+    <com.google.android.material.textfield.TextInputLayout
+        app:startIconDrawable="@drawable/ic_edit"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_marginHorizontal="@dimen/_7sdp"
+        app:boxStrokeColor="@color/white"
+        app:startIconTint="#BB0FD8"
+        app:boxBackgroundColor="#84FFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/renameList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="200"
+            android:hint="New Playlist"
+            android:textColorHint="#6AB7CE"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:inputType="textAutoComplete"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

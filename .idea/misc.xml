@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../layout/custom_preview.xml" value="0.14722222222222223" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/drawable/bck_corner_bottom_navigtion.xml" value="0.14" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/drawable/bck_corner_bottomsheet.xml" value="0.1125" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/drawable/color_item.xml" value="0.17314814814814813" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/drawable/ic_add_circle_outline.xml" value="0.14479166666666668" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/drawable/ic_frame_3708.xml" value="0.2203125" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/drawable/ic_icon_music_fake.xml" value="0.1125" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/drawable/ic_icon_video_selected_nav.xml" value="0.17314814814814813" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/drawable/ic_icon_video_unselected_nav.xml" value="0.17314814814814813" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/drawable/ic_music_selected_nav.xml" value="0.1685185185185185" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/drawable/ic_music_unselected_nav.xml" value="0.1685185185185185" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/drawable/ic_rectangle_blur.xml" value="0.21" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/drawable/navigation_icon_music_selected.xml" value="0.17314814814814813" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/drawable/navigation_icon_playlist_selected.xml" value="0.17314814814814813" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/drawable/navigation_icon_selected.xml" value="0.17314814814814813" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/drawable/navigation_icon_setting_selected.xml" value="0.17314814814814813" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/font/montserrat.xml" value="0.1265625" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/layout/activity_private_video.xml" value="0.2" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/layout/custom_bottom_sheet_more_video_list_folder.xml" value="0.25" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/layout/custom_menu_video_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/layout/custom_popup_circle_private_list.xml" value="0.16" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/layout/custom_popup_menu_video_main.xml" value="0.21" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/layout/custom_popup_more_video_list.xml" value="0.25" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/layout/custom_popup_more_video_list_2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/layout/fragment_base.xml" value="0.20416666666666666" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/layout/fragment_music.xml" value="0.20416666666666666" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/layout/fragment_music_album.xml" value="0.20416666666666666" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/layout/fragment_music_folder.xml" value="0.20416666666666666" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/layout/fragment_music_song.xml" value="0.20416666666666666" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/layout/fragment_playlist.xml" value="0.20416666666666666" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/layout/fragment_setting.xml" value="0.20416666666666666" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/layout/fragment_video.xml" value="0.20416666666666666" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/layout/fragment_video_folder.xml" value="0.12864583333333332" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/layout/fragment_video_recent.xml" value="0.12864583333333332" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/layout/fragment_video_video.xml" value="0.2" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/layout/item_list_music_fragment_album.xml" value="0.25" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/layout/item_list_music_fragment_song.xml" value="0.33" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/layout/item_list_video_folder_fragment_video.xml" value="0.33" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/layout/item_list_video_fragment_video.xml" value="0.33" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/VideoHD_2022/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/drawable/bck_corner_bottom_navigtion.xml" value="0.14290540540540542" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/drawable/custom_seekbar_continue_video.xml" value="0.12364864864864865" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/drawable/ic_add_round.xml" value="0.1" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/drawable/ic_brightness_medium.xml" value="0.14290540540540542" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/drawable/ic_check_box.xml" value="0.19583333333333333" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/drawable/ic_forward_30.xml" value="0.12736486486486487" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/drawable/ic_forward_5.xml" value="0.12736486486486487" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/drawable/ic_img_main_playlist_layout.xml" value="0.13125" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/drawable/ic_lock_outline__black.xml" value="0.19583333333333333" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/drawable/ic_playlist_img_main.xml" value="0.14290540540540542" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/drawable/ic_private_lock_open.xml" value="0.19583333333333333" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/drawable/ic_replay.xml" value="0.12736486486486487" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/drawable/ic_replay_30.xml" value="0.12736486486486487" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/drawable/ic_replay_5.xml" value="0.12736486486486487" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/drawable/ic_un_check_box.xml" value="0.19583333333333333" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/drawable/thumb_seekbar_continue_video.xml" value="0.12364864864864865" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/activity_edit_song.xml" value="0.13243243243243244" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/activity_edit_video.xml" value="0.22" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/activity_enter_pin.xml" value="0.22" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/activity_folder_video.xml" value="0.1814814814814815" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/activity_list_video_music.xml" value="0.13243243243243244" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/activity_main.xml" value="0.13243243243243244" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/activity_play_video.xml" value="0.18" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/activity_private_video.xml" value="0.37679425837320574" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/activity_search_video.xml" value="0.1486111111111111" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/activity_security_question.xml" value="0.25" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/activity_selected_video_or_music.xml" value="0.13243243243243244" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/activity_set_pin.xml" value="0.1486111111111111" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/custom_popup_circle_private_list.xml" value="0.1814814814814815" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/custom_video_bottom_sheet_video_main.xml" value="0.1814814814814815" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/custom_video_private_bottom_sheet.xml" value="0.1814814814814815" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/fragment_favorite.xml" value="0.13243243243243244" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/fragment_play_list.xml" value="0.13243243243243244" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/fragment_play_list_all.xml" value="0.13243243243243244" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/fragment_setting.xml" value="0.21" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/fragment_video.xml" value="0.1486111111111111" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/fragment_video_folder.xml" value="0.1814814814814815" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/fragment_video_recent.xml" value="0.1675925925925926" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/fragment_video_video.xml" value="0.1814814814814815" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/item_choose_folder_in_video_private.xml" value="0.25" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/item_list_music_fragment_album.xml" value="0.13243243243243244" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/item_list_music_fragment_song.xml" value="0.1" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/item_list_video_folder_fragment_video.xml" value="0.1" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/item_list_video_fragment_video.xml" value="0.33" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/item_list_video_music_in_list_play.xml" value="0.13243243243243244" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/item_playlist.xml" value="0.22" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/item_selected_edit_video.xml" value="0.16620370370370371" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/new_playlist.xml" value="0.13243243243243244" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/rename_field.xml" value="0.15" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/layout/select_playlist_item.xml" value="0.1" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/app/src/main/res/menu/bottom_nav_menu.xml" value="0.13243243243243244" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/commons/src/main/res/drawable/bottom_sheet_bg.xml" value="0.19583333333333333" />
+        <entry key="..\:/Learn_Android/My_Project/VideoMusicLocal/and_videohd/commons/src/main/res/drawable/ic_folder_vector.xml" value="0.18055555555555555" />
+        <entry key="app/src/main/res/drawable/bck_corner_bottom_navigtion.xml" value="0.201" />
+        <entry key="app/src/main/res/drawable/bck_corner_bottomsheet.xml" value="0.201" />
+        <entry key="app/src/main/res/drawable/bg_category.xml" value="0.198" />
+        <entry key="app/src/main/res/drawable/color_circle_gradient.xml" value="0.1135" />
+        <entry key="app/src/main/res/drawable/custom_seekbar.xml" value="0.2075" />
+        <entry key="app/src/main/res/drawable/ic_add_circle_outline.xml" value="0.201" />
+        <entry key="app/src/main/res/drawable/ic_album.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_avt_folder.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_bg_playing.xml" value="0.137" />
+        <entry key="app/src/main/res/drawable/ic_check_circle.xml" value="0.1135" />
+        <entry key="app/src/main/res/drawable/ic_edit.xml" value="0.1135" />
+        <entry key="app/src/main/res/drawable/ic_headset.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_phonelink_ring.xml" value="0.128" />
+        <entry key="app/src/main/res/drawable/ic_play_one_song_vector.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_play_song.xml" value="0.132" />
+        <entry key="app/src/main/res/drawable/ic_repeat_one_song_vector.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_repeat_playlist_vector.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_sd_storage.xml" value="0.128" />
+        <entry key="app/src/main/res/drawable/ic_thumb.xml" value="0.2075" />
+        <entry key="app/src/main/res/drawable/ic_trash.xml" value="0.2275" />
+        <entry key="app/src/main/res/drawable/progress_song.xml" value="0.144" />
+        <entry key="app/src/main/res/drawable/thum.xml" value="0.1415" />
+        <entry key="app/src/main/res/drawable/thumb.xml" value="0.16" />
+        <entry key="app/src/main/res/drawable/thumb_state.xml" value="0.2055" />
+        <entry key="app/src/main/res/drawable/track.xml" value="0.1415" />
+        <entry key="app/src/main/res/layout/activity_album.xml" value="0.32760416666666664" />
+        <entry key="app/src/main/res/layout/activity_equalizer_music.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.165625" />
+        <entry key="app/src/main/res/layout/activity_permission.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_private_video.xml" value="0.32256410256410256" />
+        <entry key="app/src/main/res/layout/activity_song_playing.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/content_scrolling.xml" value="0.32760416666666664" />
+        <entry key="app/src/main/res/layout/custom_bottom_sheet_more_video_list.xml" value="0.32760416666666664" />
+        <entry key="app/src/main/res/layout/custom_popup_menu_video_main.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_music.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_music_album.xml" value="0.31851851851851853" />
+        <entry key="app/src/main/res/layout/fragment_music_artist.xml" value="0.32256410256410256" />
+        <entry key="app/src/main/res/layout/fragment_music_folder.xml" value="0.32760416666666664" />
+        <entry key="app/src/main/res/layout/fragment_setting.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/layout/fragment_video.xml" value="0.30925925925925923" />
+        <entry key="app/src/main/res/layout/fragment_video_folder.xml" value="0.31851851851851853" />
+        <entry key="app/src/main/res/layout/item_list_music_fragment_album.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/item_list_music_fragment_song.xml" value="0.28888888888888886" />
+        <entry key="app/src/main/res/layout/item_list_video_fragment_video.xml" value="0.32760416666666664" />
+        <entry key="app/src/main/res/layout/item_permission.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/item_seekbar.xml" value="0.32760416666666664" />
+        <entry key="app/src/main/res/layout/view_current_song.xml" value="0.3260416666666667" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.201" />
+        <entry key="app/src/main/res/xml/provider_paths.xml" value="0.17962962962962964" />
+        <entry key="commons/src/main/res/drawable/gradient_background_flipped.xml" value="0.1" />
+        <entry key="commons/src/main/res/drawable/ic_pause_outline_vector.xml" value="0.132" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.22" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

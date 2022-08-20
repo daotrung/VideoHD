@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Video HD</string>
+    <string name="fragment_playlist">Playlist</string>
+    <string name="fragment_setting">Setting</string>
+    <string name="fragment_video">Video</string>
+    <string name="fragment_music">Music</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_to_playlist">Add to playlist</string>
+    <string name="play_next">Play next</string>
+    <string name="set_ringtone">Set ringtone</string>
+    <string name="delete">Delete</string>
+    <string name="favourite">Favourite</string>
+    <string name="share">Share</string>
+    <string name="play">Play</string>
+    <string name="lock_in_private_folder">Lock in private folder</string>
+    <string name="rename">Rename</string>
+    <string name="gallery">Gallery</string>
+    <string name="downloader">Downloader</string>
+    <string name="music">MUSIC</string>
+
+
+    <!--    music fragment-->
+    <string name="edit">Edit</string>
+    <string name="equalizer">Equalizer</string>
+    <string name="ic_popup">ic_popup</string>
+    <string name="ic_search">ic_search</string>
+    <string name="ic_crown">ic_crown</string>
+
+    <string name="repeat_off">Repeat off</string>
+    <string name="repeat_song">Repeat current song</string>
+    <string name="repeat_playlist">Repeat all</string>
+    <string name="stop_playback_after_current_song">Stop playback after current song</string>
+    <string name="dialog_title_set_ringtone">Set ringtone</string>
+    <string name="x_has_been_set_as_ringtone">Set %1$s as your ringtone.</string>
+    <string name="x_fail_has_been_set_as_ringtone">Set %1$s as your ringtone fail.</string>
+    <string name="dialog_message_set_ringtone">Allow Music HD to modify audio settings</string>
+    <string name="deleted_x_songs">Deleted %1$s songs.</string>
+    <string name="deleted_songs">Deleted songs.</string>
+    <string name="lets_go">Let\'s go</string>
+
+    <string name="grant_access">Grant access</string>
+    <string name="permission_title">Storage Access</string>
+    <string name="permissions_denied">Permissions denied.</string>
+    <string name="permission_summary">The app needs permission to access your device storage for playing music</string>
+    <string name="ringtone_title">Ringtone (Optional)</string>
+    <string name="ringtone_summary">The app needs permission to access your device settings in order to set music as Ringtone</string>
+    <string name="edit_name">Rename</string>
+
+    <string name="shuffle_enabled">Shuffle enabled</string>
+    <string name="shuffle_disabled">Shuffle disabled</string>
+    <string name="disable_shuffle">Disable shuffle</string>
+    <string name="enable_shuffle">Enable shuffle</string>
+
+    <string name="next_track">Next:</string>
+    <string name="playing">Playing</string>
+    <string name="music_list">Music List</string>
+    <string name="select_all">Selected all</string>
+    <string name="add_play_list">Add to\nplaylist</string>
+    <string name="add_favorite">Add to\nfavourite</string>
+    <string name="install_number_icon" formatted="false">Select %d songs</string>
+    <string name="create_new_playlist">Create new playlist</string>
+</resources>

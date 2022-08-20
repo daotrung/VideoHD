@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg_playing"
+    android:padding="@dimen/_10sdp"
+    tools:context=".fragment.VideoFragment">
+
+    <ImageView
+        android:id="@+id/ic_more_music"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:contentDescription="@string/ic_popup"
+        android:src="@drawable/ic_more"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_title_menu_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/music"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ic_search_main_music"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:contentDescription="@string/ic_search"
+        android:src="@drawable/ic_search"
+        app:layout_constraintEnd_toStartOf="@id/ic_crown_main_music"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ic_crown_main_music"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:contentDescription="@string/ic_crown"
+        android:src="@drawable/ic_crown"
+        app:layout_constraintEnd_toStartOf="@id/ic_more_music"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/bck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_title_menu_main"
+        app:tabGravity="center"
+        app:tabIndicator="@drawable/ic_rectangle_blur"
+        app:tabIndicatorColor="#777E90"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="@dimen/_15sdp"
+        app:tabInlineLabel="false"
+        app:tabMode="fixed"
+        app:tabPaddingBottom="@dimen/_5sdp"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextAppearance="@style/MineCustomTabText"
+        app:tabTextColor="#777E90"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/include"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+
+    <RelativeLayout
+        android:id="@+id/include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewPager">
+
+        <ImageView
+            android:id="@+id/current_song_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_grey"
+            android:importantForAccessibility="no" />
+
+        <ImageView
+            android:id="@+id/current_song_image"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_5sdp" />
+
+        <com.daotrung.myapplication.util.view.MarqueeTextView
+            android:id="@+id/current_song_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/current_song_image"
+            android:layout_alignBottom="@+id/current_song_image"
+            android:layout_toStartOf="@+id/current_song_play_pause"
+            android:layout_toEndOf="@+id/current_song_image"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/activity_margin"
+            android:textSize="@dimen/_12ssp"
+            tools:text="My Track" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/current_song_play_pause"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/current_song_image"
+            android:layout_alignBottom="@+id/current_song_image"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/normal_margin"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:paddingStart="@dimen/smaller_margin"
+            android:paddingEnd="@dimen/smaller_margin"
+            android:scaleType="fitCenter"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/playpause" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

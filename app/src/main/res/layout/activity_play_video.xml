@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".activity.PlayVideoActivity">
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/pv_playerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:use_controller="true"
+        android:keepScreenOn="true"
+        app:controller_layout_id="@layout/custom_exo_controller_view"
+        app:show_buffering="always"
+      />
+
+    <LinearLayout
+        android:id="@+id/topController"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#42000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ic_backVideoPlay"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_arrow_left"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/videoTitle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Video name"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/_14sdp"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="marquee"
+            android:layout_height="match_parent"/>
+        <ImageButton
+            android:id="@+id/ic_more_play_video"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_more"
+            android:layout_marginEnd="@dimen/_40sdp"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomController"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#42000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="end|bottom"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imb_repeat"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_repeat_play_off"
+            />
+
+        <ImageButton
+            android:id="@+id/imb_prev"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_prev_arrow_icon"
+            android:contentDescription="prev"
+            app:tint="@color/white" />
+
+        <ImageButton
+            android:id="@+id/img_next"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_next_arrow_icon"
+            android:contentDescription="next"
+            app:tint="@color/white" />
+
+        <ImageButton
+            android:id="@+id/img_full_screen"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_maximize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/open_lock_play_video"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/lock_open_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imb_replay"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_replay"
+            android:contentDescription="replay"
+            app:tint="@color/white" />
+        <ImageButton
+            android:id="@+id/imb_play_pause"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_play_icon_video"
+            android:contentDescription="next"
+            app:tint="@color/white" />
+        <ImageButton
+            android:id="@+id/imb_forward"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_forward"
+            android:contentDescription="next"
+            app:tint="@color/white" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/brightnessIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:tint="@color/white"
+        android:drawableLeft="@drawable/ic_brightness_medium"
+        android:text="0"
+        tools:ignore="RtlHardcoded"
+        android:textSize="@dimen/_16sdp"
+        android:backgroundTint="#744C4848"
+        android:visibility="gone"
+        />
+    <Button
+        android:id="@+id/VolumeIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:tint="@color/white"
+        android:drawableLeft="@drawable/ic_volume_max"
+        android:text="0"
+        tools:ignore="RtlHardcoded"
+        android:textSize="@dimen/_16sdp"
+        android:backgroundTint="#744C4848"
+        android:visibility="gone"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

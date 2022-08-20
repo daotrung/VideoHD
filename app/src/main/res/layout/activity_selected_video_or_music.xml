@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg_playing"
+    tools:context=".activity.EditSongActivity">
+
+    <ImageView
+        android:id="@+id/imgBack_Playlist"
+        android:layout_width="wrap_content"
+        android:layout_height="?actionBarSize"
+        android:contentDescription="imvBack"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:src="@drawable/ic_arrow_back_ios"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="?actionBarSize"
+        android:fontFamily="@font/nunito_normal"
+        android:gravity="center"
+        android:text="@string/select_all"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/_20ssp"
+        app:layout_constraintEnd_toStartOf="@id/img_check_selected_all"
+        app:layout_constraintStart_toEndOf="@id/imgBack_Playlist"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_check_selected_all"
+        android:layout_width="wrap_content"
+        android:layout_height="?actionBarSize"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:src="@drawable/ic_check_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvSelect"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgSetDoneWithSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="?actionBarSize"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:src="@drawable/ic_check_pin"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/_5sdp"
+        app:layout_constraintStart_toEndOf="@id/img_check_selected_all"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutVideMusicSelected"
+        app:layout_constraintTop_toBottomOf="@id/img_check_selected_all"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bck"
+        app:tabGravity="fill"
+        app:tabIndicator="@drawable/ic_rectangle_blur"
+        app:tabIndicatorFullWidth="true"
+        app:tabIndicatorHeight="@dimen/_15sdp"
+        app:tabInlineLabel="false"
+        app:tabMode="fixed"
+        app:tabPaddingBottom="@dimen/_5sdp"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextAppearance="@style/TabTextPlayList"
+        app:tabTextColor="#777E90"
+        tools:ignore="SpeakableTextPresentCheck"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerVideoMusic"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabLayoutVideMusicSelected" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

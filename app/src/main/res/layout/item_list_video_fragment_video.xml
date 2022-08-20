@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bck"
+
+    android:layout_marginTop="@dimen/_20sdp"
+    android:layout_marginEnd="@dimen/_5sdp"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:background="@color/bck"
+        android:id="@+id/img_video_main"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txtTitleVideo"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher_round"
+        app:shapeAppearanceOverlay="@style/RoundedSquare"/>
+
+    <TextView
+        android:id="@+id/txtTitleVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:ellipsize="end"
+        android:ems="10"
+        android:lines="1"
+        android:maxLines="1"
+        android:text="Fringilla Fusce Elit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/img_video_main"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/txtTimeVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#99EBEBF5"
+        android:textSize="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        app:layout_constraintStart_toStartOf="@id/txtTitleVideo"
+        app:layout_constraintTop_toBottomOf="@id/txtTitleVideo"
+        android:text="04:15"/>
+    <TextView
+        android:id="@+id/txtStorageVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15.51Mb"
+        android:textColor="#99EBEBF5"
+        android:textSize="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitleVideo"
+        app:layout_constraintStart_toEndOf="@id/txtTimeVideo"/>
+
+
+    <LinearLayout
+        android:id="@+id/layout_seekBar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/txtTimeVideo"
+        app:layout_constraintTop_toBottomOf="@id/txtTimeVideo"
+        app:layout_constraintEnd_toEndOf="@id/txtTitleVideo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/seekBarVideoContinue"
+            android:progressDrawable="@drawable/custom_seekbar_continue_video"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:progress="30"
+            android:indeterminate="false"
+            android:thumb="@drawable/thumb_seekbar_continue_video"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtPercentContinue"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:text="20%"
+            android:textColor="#99EBEBF5"
+            android:textSize="@dimen/_10sdp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imgMoreItem"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:backgroundTint="@color/bck"
+        android:padding="@dimen/_20sdp"
+        android:src="@drawable/ic_more"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtTitleVideo" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

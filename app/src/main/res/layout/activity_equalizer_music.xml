@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bck"
+    tools:context=".activity.EqualizerMusicActivity">
+
+    <ImageView
+        android:id="@+id/imvBack"
+        android:layout_width="wrap_content"
+        android:layout_height="?actionBarSize"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:src="@drawable/ic_arrow_back_ios"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="?actionBarSize"
+        android:fontFamily="@font/nunito_normal"
+        android:gravity="center"
+        android:text="@string/equalizer"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle">
+
+        <LinearLayout
+            android:id="@+id/linearCategory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/bg_category"
+            android:orientation="horizontal"
+            android:paddingVertical="@dimen/_5sdp"
+            app:layout_constraintDimensionRatio="19.17:5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5">
+
+            <TextView
+                android:id="@+id/tvCategory"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="@string/custom"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|end"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_drop" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearEQ"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="end|center"
+            android:orientation="horizontal"
+            app:layout_constraintDimensionRatio="19.17:5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/btnSeekbar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:gravity="end|center"
+                android:checked="true"
+                android:thumb="@drawable/thumb_state"
+                app:track="@drawable/track" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearSeekbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:weightSum="5"
+        app:layout_constraintBottom_toTopOf="@id/linearControl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraint" />
+
+    <LinearLayout
+        android:id="@+id/linearControl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearSeekbar">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_10sdp">
+
+            <com.daotrung.myapplication.util.view.CircularSeekBar
+                android:id="@+id/seekbarBass"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/ic_group_seekbar"
+                app:circle_progress_color="#FFDD5789"
+                app:circle_stroke_width="@dimen/_5sdp"
+                app:circle_x_radius="@dimen/_100sdp"
+                app:circle_y_radius="@dimen/_100sdp"
+                app:end_angle="50"
+                app:lock_enabled="false"
+                app:max="1000"
+                app:pointer_alpha_ontouch="100"
+                app:pointer_color="#141416"
+                app:pointer_halo_color="#353945"
+                app:pointer_halo_color_ontouch="#353945"
+                app:pointer_radius="@dimen/_6sdp"
+                app:progress="500"
+                app:start_angle="130"
+                app:use_custom_radii="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_normal"
+                android:gravity="center"
+                android:text="Bass"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16ssp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/btnBass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:thumb="@drawable/thumb_state"
+                app:track="@drawable/track" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_10sdp">
+
+            <com.daotrung.myapplication.util.view.CircularSeekBar
+                android:id="@+id/seekbarTreble"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/ic_group_seekbar"
+                app:circle_progress_color="#FFDD5789"
+                app:circle_stroke_width="@dimen/_5sdp"
+                app:circle_x_radius="@dimen/_100sdp"
+                app:circle_y_radius="@dimen/_100sdp"
+                app:end_angle="50"
+                app:lock_enabled="false"
+                app:max="1000"
+                app:pointer_alpha_ontouch="100"
+                app:pointer_color="#141416"
+                app:pointer_halo_color="#353945"
+                app:pointer_halo_color_ontouch="#353945"
+                app:pointer_radius="@dimen/_6sdp"
+                app:progress="500"
+                app:start_angle="130"
+                app:use_custom_radii="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_normal"
+                android:gravity="center"
+                android:text="Treble"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16ssp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/btnTreble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:thumb="@drawable/thumb_state"
+                app:track="@drawable/track" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

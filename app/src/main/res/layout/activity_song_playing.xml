@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_track_Scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/activity_song_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_bg_playing"
+        tools:ignore="HardcodedText">
+
+        <ImageView
+            android:id="@+id/imvBack"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:paddingHorizontal="@dimen/_15sdp"
+            android:src="@drawable/ic_arrow_back_ios"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/activity_song_top_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/gradient_background_flipped"
+            android:contentDescription="@null"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPlaying"
+            android:layout_width="0dp"
+            android:layout_height="?actionBarSize"
+            android:fontFamily="@font/nunito_normal"
+            android:gravity="center|start"
+            android:text="@string/playing"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imvBack"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/layoutVolume"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1.6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPlaying"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <com.daotrung.myapplication.util.view.CircularSeekBar
+                android:id="@+id/seekbarVolume"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                app:circle_color="@color/white"
+                app:circle_progress_color="#FFDD5789"
+                app:circle_stroke_width="@dimen/_4sdp"
+                app:circle_x_radius="@dimen/_125sdp"
+                app:circle_y_radius="@dimen/_125sdp"
+                app:end_angle="90"
+                app:lock_enabled="false"
+                app:pointer_color="#DD5789"
+                app:pointer_halo_color="@color/white"
+                app:pointer_halo_color_ontouch="#DD5789"
+                app:pointer_halo_width="@dimen/_2sdp"
+                app:pointer_radius="@dimen/_7sdp"
+                app:use_custom_radii="true" />
+
+            <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center|top"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:src="@drawable/ic_volume_slash" />
+
+            <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center|bottom"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:src="@drawable/ic_volume_high" />
+
+            <ImageView
+                android:id="@+id/imBgVolume"
+                android:layout_width="@dimen/_125sdp"
+                android:layout_height="@dimen/_125sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_bg_volume" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/nunito_normal"
+            android:gravity="center"
+            android:text="Other Name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutVolume" />
+
+        <TextView
+            android:id="@+id/tvArtist"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/nunito_normal"
+            android:gravity="center"
+            android:text="Other Artist"
+            android:textColor="@color/color_text"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintEnd_toStartOf="@id/imvAdd"
+            app:layout_constraintStart_toEndOf="@id/imvFavorite"
+            app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+        <ImageView
+            android:id="@+id/imvFavorite"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:src="@drawable/ic_favorite"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+        <ImageView
+            android:id="@+id/imvAdd"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:src="@drawable/ic_add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:progress="20"
+            android:progressDrawable="@drawable/progress_song"
+            android:thumb="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvArtist" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:text="00:00"
+            android:textColor="@color/color_text"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/seekbar" />
+
+        <TextView
+            android:id="@+id/tvDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:text="00:00"
+            android:textColor="@color/color_text"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/seekbar" />
+
+        <LinearLayout
+            android:id="@+id/linearControl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDuration">
+
+            <ImageView
+                android:id="@+id/imvShuffle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/ic_shuffle_vector"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/seekbar" />
+
+            <ImageView
+                android:id="@+id/imvPrev"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/ic_previous_song"
+                app:layout_constraintStart_toEndOf="@id/imvShuffle"
+                app:layout_constraintTop_toBottomOf="@id/seekbar" />
+
+            <ImageView
+                android:id="@+id/imvPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_pause_song"
+                app:layout_constraintStart_toEndOf="@id/imvPrev"
+                app:layout_constraintTop_toBottomOf="@id/seekbar" />
+
+            <ImageView
+                android:id="@+id/imvNext"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/ic_next_song"
+                app:layout_constraintStart_toEndOf="@id/imvPlay"
+                app:layout_constraintTop_toBottomOf="@id/seekbar" />
+
+            <ImageView
+                android:id="@+id/imvRepeat"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/ic_repeat"
+                app:layout_constraintStart_toEndOf="@id/imvNext"
+                app:layout_constraintTop_toBottomOf="@id/seekbar" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvMusicList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_normal"
+            android:text="@string/music_list"
+            android:textColor="@color/color_text"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintBottom_toTopOf="@id/imvTop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imvTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:src="@drawable/ic_arrow_top"
+            app:layout_constraintBottom_toTopOf="@id/imvBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imvBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:src="@drawable/ic_bar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
